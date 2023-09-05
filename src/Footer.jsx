@@ -1,4 +1,6 @@
 import 'footer.css';
+import styled from 'styled-components';
+
 export default function Footer() {
     return (
       <>
@@ -8,4 +10,22 @@ export default function Footer() {
         </footer>
       </>
     );
-  }
+}
+
+const styleFooter = styled.footer`
+  display: flex;
+  flex-direction: row;
+  @media (max-width: 768px) {
+    flex-direction: column;}
+
+.footer-logo{
+  width: 6.25rem;
+  height: auto;
+}
+.footer-calltoaction{
+  color: #F8BAD1;
+  font-family: 'Quicksand';
+  font-size: 1.1875rem;
+  font-weight: 600;
+}
+`;
