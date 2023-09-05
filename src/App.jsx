@@ -1,8 +1,7 @@
 import React from 'react';
 import AddProductButton from './components/AddProductButton';
 import EditStoreButton from './components/EditStoreButton';
-import React from 'react';
-import Gallery from './components/Gallery';
+import DesignGallery from './components/DesignGallery';
 
 function App() {
   const images = [
@@ -14,6 +13,7 @@ function App() {
 
   return (
     <div>
+      <DesignGallery/>
       <AddProductButton onClick={() => console.log('ADD PRODUCT clicked')} />
       <EditStoreButton onClick={() => console.log('EDIT STORE clicked')} />
     </div>
