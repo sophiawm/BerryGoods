@@ -1,3 +1,6 @@
+import React from 'react';
+import styled from 'styled-components';
+
 const styledContainerProductGallery = styled.div`
     margin: 0;
     padding: 0;
@@ -5,27 +8,23 @@ const styledContainerProductGallery = styled.div`
     border-radius: 0.5rem;
     background-color: #fff;
 `;
-
 const styledProductImage = styled.img`
     border-radius: 0.5rem 0.5rem 0rem 0rem;
     overflow: hidden;
     width: 14.6875rem;
     height: 14.875rem;
 `;
-
 const styledContainerProductDetails = styled.div`
     display: inline-flex;
     justify-content: space-between;
     margin: 1.12rem 0.7rem 0rem;
 `;
-
 const styledProductName = styled.h3 `
     color: #6134C2;
     font-size: 1rem;
     font-weight: 700;
     letter-spacing: -0.03rem;
 `;
-
 const styledProductCategory = styled.p `
     @media (min-width: 768px) {
         border-radius: 0.5rem;
@@ -40,20 +39,17 @@ const styledProductCategory = styled.p `
         display: none;
   }
 `;
-
 const styledProductPrice = styled.p `
     color: #6134C2;
     margin-bottom: 4rem;
     font-size: 0.6875rem;
     font-weight: 600;
 `;
-
 const styledContainerProductButtons = styled.div `
     display: inline-flex;
     justify-content: space-between;
     margin: 1.12rem 0.7rem 0rem;
 `;
-
 const styledButtonDetails = styled.button `
     color: #F3B605;
     text-align: center;
@@ -61,12 +57,10 @@ const styledButtonDetails = styled.button `
     padding: 0.31rem 0.69rem;
     box-shadow: 0px 4px 0px #000;
 `;
-
 const styledContainerButtonsActions = styled.div `
     display: inline-block;
     gap: 0.31rem;
 `;
-
 const styledButtonAction = styled.button `
     background-color: #6134C2;
     box-shadow: 0px 4px 0px #000;
@@ -83,7 +77,7 @@ export default function ProductGallery() {
     return (
     <>
     <styledWrapperProductGallery className="container-product-gallery">
-        <styledProductImage className="product-image" src="" alt="Product Image"/>
+        <styledProductImage className="product-image" src="..." alt="Product Image"/>
         <styledContainerProductDetails className="container-product-details">
             <styledProductName className="product-name">Product name</styledProductName>
             <styledProductCategory className="product-category">Category</styledProductCategory>
@@ -100,4 +94,3 @@ export default function ProductGallery() {
     </>
 );
 }
-
