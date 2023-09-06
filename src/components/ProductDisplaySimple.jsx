@@ -1,4 +1,4 @@
-import {DesignGallery} from '../components/DesignGallery';
+import { } from '../styles/ProductDisplay.styled.jsx';
 
 export default function ProductDisplay(){
   

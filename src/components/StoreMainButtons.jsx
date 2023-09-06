@@ -1,3 +1,4 @@
+import React from 'react';
 import { AddProductButtonWrapper, ButtonsContainer, EditStoreButtonWrapper} from '../styles/Buttons.styled';
 
 function MainButtons () {

@@ -2,19 +2,20 @@ import styled from 'styled-components';
 
 export const GalleryContainer = styled.div`
   display: flex;
+  flex-direction: row;
   overflow-x: scroll;
-  gap: 16px;
-  padding: 16px;
-  background: white;
-  max-width: 50%;
+  justify-content: center;
+  gap: 1.5rem; 
+  margin: 1.7rem, 6rem;
+  background: none;
 `;
 
 export const ImageContainer = styled.div`
-  flex: 0 0 auto;
-  width: 150px;
-  height: 150px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+  width: 14rem;
+  height: 14rem;
+  border-radius: 0.5rem;
+  padding:1rem;
+  background-color: white;
 `;
 
 export const Image = styled.img`
