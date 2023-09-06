@@ -6,6 +6,10 @@ import Footer from './components/Footer.jsx';
 function App() {
   return (
     <>
+    <Navbar></Navbar>
+    <main>
+      
+    </main>
       <DesignGallery />
         <MainButtons />
       <Footer/>
