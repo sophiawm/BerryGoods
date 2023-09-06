@@ -1,13 +1,13 @@
-import { useState } from "react";
-import { TiThMenu } from "react-icons/ti";
-import { IoMdClose } from "react-icons/io";
+import { useState } from 'react';
+import { TiThMenu } from 'react-icons/ti';
+import { IoMdClose } from 'react-icons/io';
 import {
   Header,
   Nav,
   Menu,
   BurgerIcon,
   Logo,
-} from "../styles/Header.styled"; 
+} from "../styles/Header.styled.jsx"; 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
