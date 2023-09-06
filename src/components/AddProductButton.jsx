@@ -1,3 +1,4 @@
+import React from 'react';
 import { AddProductButtonWrapper } from '../styles/Buttons.styled';
 
 const AddProductButton = ({ onClick }) => {

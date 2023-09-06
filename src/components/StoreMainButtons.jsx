@@ -9,7 +9,7 @@ function MainButtons () {
     </ButtonsContainer>
     </>
   );
-};
+}
 
 export default MainButtons;
 

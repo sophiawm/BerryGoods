@@ -1,7 +1,4 @@
-import React from 'react';
-import { GalleryContainer, ImageContainer, Image } from '../styles/GalleryStyles';
-
-
+import { GalleryContainer, ImageContainer, Image } from './styles/GalleryStyles';
 
 const DesignGallery = () => {
   const images = [
