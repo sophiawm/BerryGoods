@@ -6,7 +6,9 @@ export const StyleFooter = styled.footer`
     justify-content: center;
     align-items: center;
     background-color: #6134C2;
-    width: 100vw;
+    width: 100%;
+    margin: 0;
+    padding: 0;
     height: 7.5rem;
     
     @media (max-width: 768px) {
