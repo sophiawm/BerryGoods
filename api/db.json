@@ -1,0 +1,88 @@
+{
+  "products": [
+    { 
+      "id": 1,
+      "name": "Nombre de diseño Uno",
+      "description":"Descripción del producto Uno",
+      "color": "#212121",
+      "price": 10,
+      "categoryId": 1
+    },
+
+    { 
+      "id": 2,
+      "name": "Nombre de diseño dos",
+      "description":"Descripción del producto dos",
+      "color": "#fff",
+      "price": 20,
+      "categoryId": 2
+    },
+
+    { 
+      "id": 3,
+      "name": "Nombre de diseño Tres",
+      "description":"Descripción del producto Tres",
+      "color": "red",
+      "price": 30,
+      "categoryId": 6
+    },
+    
+    { 
+      "id": 4,
+      "name": "Nombre de diseño Tres",
+      "description":"Descripción del producto Tres",
+      "color": "blue",
+      "price": 30,
+      "categoryId": 6
+    }
+
+  ],
+
+  "categories": [
+    {
+      "id": 1,
+      "categoryName": "Abstract" 
+    },
+
+    {
+      "id": 2,
+      "categoryName": "Vintage" 
+    },
+
+    {
+      "id": 3,
+      "categoryName": "Typography" 
+    },
+
+    {
+      "id": 4,
+      "categoryName": "lowbrow" 
+    },
+
+    {
+      "id": 5,
+      "categoryName": "Painting" 
+    },
+
+    {
+      "id": 6,
+      "categoryName": "Floral" 
+    },
+
+    {
+      "id": 7,
+      "categoryName": "Illustration" 
+    },
+
+    {
+      "id": 8,
+      "categoryName": "Tatto" 
+    },
+
+    {
+      "id": 9,
+      "categoryName": "Dark art" 
+    }
+    
+  ]
+}
