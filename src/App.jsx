@@ -1,3 +1,30 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import Navbar from './components/Header'
+
 import React from 'react';
 import MainButtons from './components/StoreMainButtons.jsx'
 import DesignGallery from './components/DesignGallery.jsx';
