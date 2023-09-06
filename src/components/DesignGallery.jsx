@@ -1,7 +1,16 @@
 import React from 'react';
 import { GalleryContainer, ImageContainer, Image } from '../styles/GalleryStyles';
 
-const Gallery = ({ images }) => {
+
+
+const DesignGallery = () => {
+  const images = [
+    'image1.jpg',
+    'image2.jpg',
+    'image3.jpg',
+    // Agrega más imágenes según sea necesario
+  ];
+  
   return (
     <GalleryContainer>
       {images.map((image, index) => (
@@ -13,4 +22,4 @@ const Gallery = ({ images }) => {
   );
 };
 
-export default Gallery;
+export default DesignGallery;

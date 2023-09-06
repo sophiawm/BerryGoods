@@ -1,38 +1,41 @@
 import styled from 'styled-components';
 
+export const ButtonsContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin: 1rem 0rem 1rem 5rem;
+    @media (max-width: 768px) {
+        flex-direction: column;
+        margin: 1rem;
+        width:70vw;
+    }
+`;
+
 export const AddProductButtonWrapper = styled.button`
   background-color: #F8BAD1;
   color: #6134C2;
-  padding: 10px 20px;
+  font-family: 'Quicksand';
+  padding: 1rem 1.5rem;
   border: none;
-  cursor: pointer;
-  font-size: 16px;
-  border-radius: 4px;
-  margin-right: 20px;
+  font-size: 1.25rem;
+  border-radius: 0.625rem;
   box-shadow: 0px 4px 4px 0px #000;
-  width: 160px;
-  height: 60px;
+  font-weight: 700;
 
   @media (max-width: 768px) {
     margin-right: 0;
     margin-bottom: 10px;
   }
 `;
-
 export const EditStoreButtonWrapper = styled.button`
   background-color: #F3B605;
   color: #6134C2;
-  padding: 10px 20px;
+  padding: 1rem 1.5rem;
+  font-family: 'Quicksand';
   border: none;
-  cursor: pointer;
-  font-size: 16px;
-  border-radius: 4px;
-  margin-right: 20px;
+  font-size: 1.25rem;
+  border-radius: 0.625rem;
   box-shadow: 0px 4px 4px 0px #000;
-  width: 160px;
-  height: 60px;
-
-  @media (max-width: 768px) {
-    margin-right: 0;
-  }
+  font-weight: 700;
 `;

@@ -1,15 +1,23 @@
-import React from 'react';
 import styled from 'styled-components';
+import logo from '../assets/logo-berry-goods.png';
 
-const styleFooter = styled.footer`
+const StyleFooter = styled.footer`
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #6134C2;
+  width: 100vw;
+  height: 7.5rem;
+  
   @media (max-width: 768px) {
     flex-direction: column;}
+    height: 9.8125rem;
 
 .footer-logo{
   width: 6.25rem;
-  height: auto;
+  height: 4.22413rem;
+  margin-right: 2rem;
 }
 .footer-calltoaction{
   color: #F8BAD1;
@@ -21,10 +29,10 @@ const styleFooter = styled.footer`
 export default function Footer() {
     return (
       <>
-        <footer className="footer-general-container">
-          <img className="footer-logo" src="assets/logo-berry-good.png" alt="Berry Goods Logo"></img>
+        <StyleFooter className="footer-general-container">
+          <img className="footer-logo" src={logo} alt="Berry Goods Logo" />
           <h2 className="footer-calltoaction">Sell and buy delicious designs!</h2>
-        </footer>
+        </StyleFooter>
       </>
     );
 }
