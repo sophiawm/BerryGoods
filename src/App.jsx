@@ -1,5 +1,5 @@
 import React from 'react';
-import InfoComponent from './InfoComponent'; 
+import InfoComponent from './components/InfoComponent'; 
 
 function App() {
   return (
