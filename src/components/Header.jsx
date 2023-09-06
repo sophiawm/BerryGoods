@@ -7,7 +7,7 @@ import {
   Menu,
   BurgerIcon,
   Logo,
-} from "./styles/Header.styled"; 
+} from "../styles/Header.styled"; 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 

@@ -73,7 +73,6 @@ export const Menu = styled.ul`
       font-size: 1.5rem;
       text-decoration: none;
       padding: 1rem;
-     
 
       @media (min-width: 768px) {
         width:10rem;
