@@ -1,44 +1,15 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-import Navbar from './components/Header'
-
 import React from 'react';
-import MainButtons from './components/StoreMainButtons.jsx'
+import Navbar from './components/Header.jsx';
+import MainButtons from './components/StoreMainButtons.jsx';
 import DesignGallery from './components/DesignGallery.jsx';
 import Footer from './components/Footer.jsx';
 
 function App() {
   return (
     <>
-    <Navbar></Navbar>
-    <main>
-      
-    </main>
-      <DesignGallery />
-        <MainButtons />
+      <Navbar/>
+        <DesignGallery />
+          <MainButtons />
       <Footer/>
     </>
   );
