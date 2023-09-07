@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form"
+import {useNavigate} from "react-router-dom"
 
 import logo from "../../assets/logo-berry-goods.png"
 import styles from "./login.module.css"
@@ -7,8 +8,21 @@ const Login = ()=>{
 
     const { register, handleSubmit} = useForm()
 
-    const handleSubmitForm = (data)=>{
-        console.log(data)
+    const navigate = useNavigate()
+
+    const handleSubmitForm = async (data)=>{
+       
+
+        let result = await fetch(`http://localhost:3000/users`)
+        let users = await result.json()
+
+        users.filter( user =>{
+            if( data.email == user.userName && data.password == user.pass ){
+                navigate(`/products`)
+            }else{
+                console.log("error en la contraseña o email")
+            }
+        })
     }
 
 
