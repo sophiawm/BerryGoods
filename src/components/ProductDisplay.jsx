@@ -64,7 +64,7 @@ const GetProductCategory = styled(GetProductDescription)`
 
 const ProductDisplay = () => {
   let product = useLoaderData()
-
+  console.log(useLoaderData)
 
   
 /*   const [product, setProduct] = useState(null);

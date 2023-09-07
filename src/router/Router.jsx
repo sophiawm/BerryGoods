@@ -1,10 +1,9 @@
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import Login from "../pages/login/Login";
-import Products from "../pages/products/Products";
+import ProductDisplayPage from "../pages/products/ProductDisplayPage";
 import Error404 from "../pages/error404/Error404";
-import ProductDisplay from "../components/ProductDisplay";
 import productsService from "../service/productService";
-import App from "../App";
+import Dashboard from "../pages/products/Dashboard";
 
 const fetchProducts = async () => {
     let product = await productsService.getProduct(1);
@@ -18,12 +17,13 @@ const router = createBrowserRouter([
         errorElement:<Error404/>
     },
     {
-        path:'/products',
-        element:<Products/>
+        path: "/homepage",
+        element: <Dashboard />,
+        loader: fetchProducts
     },
     {
-        path: "/homepage",
-        element: <App />,
+        path:'/products',
+        element:<ProductDisplayPage/>,
         loader: fetchProducts
     }
 ])
