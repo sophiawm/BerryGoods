@@ -1,10 +1,12 @@
-import { GalleryContainer, ImageContainer, Image } from './styles/GalleryStyles';
+import { GalleryContainer, ImageContainer, Image } from '../styles/DesingGallery.styled.jsx';
+import design1 from '../assets/design1.png';
+import design2 from '../assets/design2.png';
+import design3 from '../assets/design3.png';
+import design4 from '../assets/design4.png';
+
 
 const DesignGallery = () => {
-  const images = [
-    'image1.jpg',
-    'image2.jpg',
-    'image3.jpg',
+  const images = [design1, design2, design3, design4,
     // Agrega más imágenes según sea necesario
   ];
   

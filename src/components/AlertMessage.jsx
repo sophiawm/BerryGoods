@@ -1,8 +1,10 @@
-import { useState } from "react";
+import  { useState } from "react";
 import PropTypes from "prop-types";
+
 
 const Alert = ({ message, onClose, onDelete }) => {
   const [showAlert, setShowAlert] = useState(true);
+  const [showDeleteAlert, setShowDeleteAlert] = useState(false);
 
   const handleClose = () => {
     setShowAlert(false);
@@ -10,9 +12,8 @@ const Alert = ({ message, onClose, onDelete }) => {
   };
 
   const handleDelete = () => {
-    // Agrega lógica para eliminar aquí si es necesario
     onDelete();
-    setShowAlert(false); // Cierra la alerta después de eliminar
+    setShowDeleteAlert(false); // Cierra la alerta de eliminación
   };
 
   return (
@@ -60,8 +61,18 @@ const Alert = ({ message, onClose, onDelete }) => {
           }}
           onClick={handleDelete}
         >
-          Delete
+          Eliminar Elemento
         </button>
+
+        {/* Mostrar el componente de eliminación solo cuando showDeleteAlert es verdadero */}
+        {showDeleteAlert && (
+          <div>
+            {/* Contenido del componente de eliminación */}
+            <p>¿Estás seguro de que deseas eliminar este elemento?</p>
+            <button onClick={handleDelete}>Sí</button>
+            <button onClick={() => setShowDeleteAlert(false)}>No</button>
+          </div>
+        )}
       </div>
     )
   );
