@@ -1,61 +1,109 @@
 {
-    "users":[
-        {
-            "id":0,
-            "userName":"sergio",
-            "pass":123
-        },
-        {
-            "id":1,
-            "userName":"celia",
-            "pass":123
-        }
-    ],
-    "products":[
-        {
-            "id":0,
-            "idUser":0,
-            "title":"personalizado",
-            "description":"Hermoso paisaje de montaña Fuji o Fujisan con reflexión sobre el lago Shoji al amanecer con cielo crepúsculo en la prefectura de Yamanashi, Japón. Famosos viajes y camping en uno de los 5 lagos Fuji.",
-            "images":[
-                "https://images.pexels.com/photos/17910602/pexels-photo-17910602/free-photo-of-comida-madera-jardin-patatas.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-                "https://images.pexels.com/photos/5677703/pexels-photo-5677703.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-            ],
-            "formato":{
-                "pixeles":"6000 × 3999",
-                "in":"i20 × 13,3n",
-                "formato":"jpg"
-            }
-        },
-        {
-            "id":1,
-            "idUser":0,
-            "title":"escalar",
-            "description":"Una silueta de un joven senderista de pareja estaba parado en la cima de la montaña mirando las estrellas y la Vía Láctea por el cielo crepúsculo. Ambos estaban felices y libres de viajar.",
-            "images":[
-                "https://images.pexels.com/photos/17038053/pexels-photo-17038053/free-photo-of-naturaleza-australia-animal-arbol.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-                "https://images.pexels.com/photos/17038057/pexels-photo-17038057/free-photo-of-naturaleza-australia-comiendo-animal.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-            ],
-            "formato":{
-                "pixeles":"6000 × 3999",
-                "in":"i20 × 13,3n",
-                "formato":"jpg"
-            }
-        },
-        {
-            "id":3,
-            "idUser":1,
-            "title":"hamburguesa",
-            "description":"una rica y jugasa hamburguesa.",
-            "images":[
-                "https://images.pexels.com/photos/17820839/pexels-photo-17820839/free-photo-of-pan-comida-cena-no-saludable.jpeg",
-                "https://images.pexels.com/photos/1251197/pexels-photo-1251197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-            ],
-            "formato":{
-                "pixeles":"6000 × 3999",
-                "in":"i20 × 13,3n",
-                "formato":"jpg"
-            }
-        }
-    ]
+  "users": [
+    {
+      "id": 0,
+      "userName": "sergio",
+      "pass": 123
+    },
+    {
+      "id": 1,
+      "userName": "celia",
+      "pass": 123
+    }
+  ],
+  "artists": [
+    {
+      "id": 1,
+      "nickname": "Nickname",
+      "brand":  "Daily Design"
+    }
+  ],
+
+
+  "products": [
+    { 
+      "id": 1,
+      "name": "Nombre de diseño Uno",
+      "description":"Descripción del producto Uno",
+      "color": "#212121",
+      "price": 10,
+      "categoryId": 1
+    },
+
+    { 
+      "id": 2,
+      "name": "Nombre de diseño dos",
+      "description":"Descripción del producto dos",
+      "color": "#fff",
+      "price": 20,
+      "categoryId": 2
+    },
+
+    { 
+      "id": 3,
+      "name": "Nombre de diseño Tres",
+      "description":"Descripción del producto Tres",
+      "color": "red",
+      "price": 30,
+      "categoryId": 6
+    },
+    
+    { 
+      "id": 4,
+      "name": "Nombre de diseño Tres",
+      "description":"Descripción del producto Tres",
+      "color": "blue",
+      "price": 30,
+      "categoryId": 6
+    }
+
+  ],
+
+  "categories": [
+    {
+      "id": 1,
+      "categoryName": "Abstract" 
+    },
+
+    {
+      "id": 2,
+      "categoryName": "Vintage" 
+    },
+
+    {
+      "id": 3,
+      "categoryName": "Typography" 
+    },
+
+    {
+      "id": 4,
+      "categoryName": "lowbrow" 
+    },
+
+    {
+      "id": 5,
+      "categoryName": "Painting" 
+    },
+
+    {
+      "id": 6,
+      "categoryName": "Floral" 
+    },
+
+    {
+      "id": 7,
+      "categoryName": "Illustration" 
+    },
+
+    {
+      "id": 8,
+      "categoryName": "Tatto" 
+    },
+
+    {
+      "id": 9,
+      "categoryName": "Dark art" 
+    }
+    
+  ]
 }

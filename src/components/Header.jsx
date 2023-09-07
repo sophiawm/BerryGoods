@@ -23,11 +23,11 @@ const Navbar = () => {
         </Logo>
         {menuOpen ? (
           <BurgerIcon onClick={toggleMenu}>
-            <IoMdClose className="burguerIcon" color="#F3B605" size={50} />
+            <IoMdClose className="burguerIcon" color="#F3B605" size={40} />
           </BurgerIcon>
         ) : (
           <BurgerIcon onClick={toggleMenu}>
-            <TiThMenu className="burguerIcon" color="#F3B605" size={50} />
+            <TiThMenu className="burguerIcon" color="#F3B605" size={40} />
           </BurgerIcon>
         )}
         <Menu open={menuOpen}>

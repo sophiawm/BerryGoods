@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react'
+
 import { useLoaderData } from 'react-router-dom'
 import styled from 'styled-components'
 import ColorOptions from './ColorOptions'
-import GetProduct from '../service/GetProduct'
-import GetCategories from '../service/GetCategories'
+
+
 
 
 const ProductDisplayWrap = styled.section`

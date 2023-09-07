@@ -1,4 +1,5 @@
 import { } from '../styles/ProductDisplay.styled.jsx';
+import DesignGallery from '../components/DesignGallery.jsx'
 
 export default function ProductDisplay(){
   
@@ -9,4 +10,4 @@ export default function ProductDisplay(){
         <DesignGallery />
       </div>
     );
-  };
+  }

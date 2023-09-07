@@ -32,9 +32,9 @@ export const Nav = styled.nav`
 export const Logo = styled.div`
   img {
     display:flex;
-    width: 6rem;
-    padding: 1.5rem;
-    margin-left: 3rem;
+    width: 6.5rem;
+    padding: 1rem;
+    margin-left: 0;
     
     @media (min-width: 768px) {
       width: 8rem;
