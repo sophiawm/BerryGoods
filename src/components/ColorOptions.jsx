@@ -5,10 +5,12 @@ import styled from 'styled-components'
 const ColorOptionsWrap = styled.div`
   display: flex;
   flex-direction: column; 
-  gap: 0.8rem; 
+  gap: 0.8rem;
+  margin: 1rem 0rem 2rem;
 `
 const ConbinationSelector = styled.h3`
-  font: normal 600 clamp(0.688rem, 0.455rem + 1.16vw, 1.5rem) 'Quicksans', sans-serif;
+  font-size: 1rem;
+  font-family: 'Quicksand'; 
   color: #6134C2;
 `
 

@@ -1,5 +1,5 @@
 import { useState } from 'react'; 
-import { ContainerProductGallery, ContainerSingleProductGallery, ProductImage, ContainerProductDetails, 
+import { ContainerSingleProductGallery, ProductImage, ContainerProductDetails, 
     ProductName, ProductCategory, ProductPrice, ContainerProductButtons, 
     ButtonDetails, ButtonAction, ContainerButtonsActions, IconAction } from '../styles/ProductGallery.styled'
 import { useLoaderData, Link } from 'react-router-dom'
@@ -33,8 +33,6 @@ export default function ProductGallery(products) {
     <>
     {data.map(product => {
         return (
-            <ContainerProductGallery>
-
         <ContainerSingleProductGallery className="container-product-gallery">
                     <ProductImage className="product-image" src={product1} alt="Product Image"/>
                     <ContainerProductDetails className="container-product-details">
@@ -54,12 +52,9 @@ export default function ProductGallery(products) {
                     </ContainerButtonsActions>
                     </ContainerProductButtons>
         </ContainerSingleProductGallery>
-
-            </ContainerProductGallery>
         )
     })
     }
-   
     </>
 );
 }

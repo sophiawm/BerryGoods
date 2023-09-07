@@ -30,7 +30,8 @@ const MainWrap = styled.main`
   grid: 
     "figure" auto
     "login"  auto
-    / 1fr ; 
+    / 1fr ;
+    font-family: 'Quicksand'; 
 `
 
 const LogoWrap = styled.figure`

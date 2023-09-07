@@ -19,7 +19,7 @@ const Navbar = () => {
     <Header>
       <Nav>
         <Logo>
-          <img src="src/assets/nav-logo.png" alt="Logo" />
+          <img src="../src/assets/nav-logo.png" alt="Logo" />
         </Logo>
         {menuOpen ? (
           <BurgerIcon onClick={toggleMenu}>

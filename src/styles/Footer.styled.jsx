@@ -12,9 +12,10 @@ export const StyleFooter = styled.footer`
     height: 7.5rem;
     
     @media (max-width: 768px) {
-        flex-direction: column;}
+        flex-direction: column;
         height: 9.8125rem;
-
+        gap:1rem;
+    }
     .footer-logo{
     width: 6.25rem;
     height: 4.22413rem;
