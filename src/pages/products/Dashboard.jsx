@@ -18,7 +18,7 @@ function Dashboard() {
             <ShopDesignsContainer>
                 <WelcomeTitle>Daily Design</WelcomeTitle>
                 <DateOpened>Opened since 2019</DateOpened>
-                <ProductNumber>Products (2)</ProductNumber>
+                <ProductNumber>Products({products.length})</ProductNumber>
                 <ProductGallery products={products} />
                 <MainButtons />
             </ShopDesignsContainer>

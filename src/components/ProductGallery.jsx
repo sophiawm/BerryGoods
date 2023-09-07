@@ -1,3 +1,4 @@
+import { useState } from 'react'; 
 import { ContainerProductGallery, ContainerSingleProductGallery, ProductImage, ContainerProductDetails, 
     ProductName, ProductCategory, ProductPrice, ContainerProductButtons, 
     ButtonDetails, ButtonAction, ContainerButtonsActions, IconAction } from '../styles/ProductGallery.styled'
@@ -10,8 +11,23 @@ import editicon from '../assets/edit-button.png'
 
 
 export default function ProductGallery(products) {
- const data = products.products
-    console.log(data)
+    const initialData = products.products
+    const [data, setData] = useState(initialData); // Estado para almacenar los productos
+
+    // Función para eliminar un producto por su ID
+    const deleteProduct = async (productId) => {
+        // Realiza la lógica para eliminar el producto en el servidor (usando fetch, axios, etc.)
+        // Luego, actualiza el estado para reflejar el cambio en la interfaz.
+        try {
+            // Realiza la solicitud de eliminación al servidor aquí
+            // Supongamos que se ha eliminado con éxito, actualizamos el estado
+            const updatedData = data.filter((product) => product.id !== productId);
+            setData(updatedData);
+        } catch (error) {
+            console.error('Error al eliminar el producto:', error);
+        }
+    };
+
 
     return (
     <>
@@ -32,7 +48,9 @@ export default function ProductGallery(products) {
                         </Link>
                 <ContainerButtonsActions className="container-actions">
                         <ButtonAction className="button-edit"><IconAction className="icon-action" src={deleteicon} alt="Button Edit"/></ButtonAction>
-                        <ButtonAction className="button-delete"><IconAction className="icon-action" src={editicon} alt="Button Delete"/></ButtonAction>
+
+                        <ButtonAction className="button-delete" onClick={async() => deleteData(product.id)}><IconAction className="icon-action" src={editicon} alt="Button Delete" /></ButtonAction>
+
                     </ContainerButtonsActions>
                     </ContainerProductButtons>
         </ContainerSingleProductGallery>
@@ -45,3 +63,11 @@ export default function ProductGallery(products) {
     </>
 );
 }
+
+
+
+
+
+
+
+

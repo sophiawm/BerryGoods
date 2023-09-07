@@ -17,12 +17,26 @@ const fetchProduct = async ({params}) => {
   return product
 }
 
+const fetchProductEdit = async ({params}) => {
+  const id = ({params}).params.id
+  let product = await productsService.editProduct(id)
+  return product
+}
+
 
 const fetchCategory = async ({params}) => {
   const id = ({params}).params.id
   let product = await productsService.getCategory(id);
   return product
 }
+
+const fecthProductDelete = async ( {params}) => {
+  const id = ({params}).params.id
+  let deleteProduct = productsService.deleteProduct(id);
+  return deleteProduct
+}
+
+
 
 const router = createBrowserRouter([
   {
@@ -36,6 +50,12 @@ const router = createBrowserRouter([
     element: <Dashboard />,
     loader: fetchProducts
   },  
+
+  {
+    path: "/homepage",
+    element: <Dashboard />,
+    loader: fecthProductDelete
+  }, 
 
   {
     path:'/homepage/:id',
@@ -58,7 +78,7 @@ const router = createBrowserRouter([
   {
     path:'/edit-products/:id',
     element:<ProductFormPage/>,
-    loader: fetchProduct
+    loader: fetchProductEdit
   }
 
 ])

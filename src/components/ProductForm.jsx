@@ -49,7 +49,8 @@ const ImageEmbed = styled.img`
   object-fit: contain; 
 `
 const EditLabel = styled.label`
-  display: inline-flex; 
+  display: flex;
+  flex-direction: column; 
 
 `
 
@@ -77,23 +78,12 @@ const ProductDisplay = () => {
         </ImageContainer>
       </ProductDisplay__columns>
       <ProductDisplay__columns>
-      {/* {product.map(product => {
-        return  ( */}
-          <>
-          <EditLabel  htmlFor="name"> 
+          <EditLabel  htmlFor="name"> Editar nombre:
             <EditInput type='text' id='name' name='name' value={product.name}/>
           </EditLabel>
-          <EditLabel  htmlFor="name"> 
-            <EditInput type='text' id='name' name='name' value={product.name}/>
-          </EditLabel>
-          
-          {/* <GetProductDescription>Descripción del producto: {product.description}</GetProductDescription>
-          <GetProductCategory>Categoría del producto: {product.categoryName}</GetProductCategory> */}
-        </>
-    {/*     )
-      }
-      )}  
-          */}      
+          <EditLabel  htmlFor="name"> Editar descripción:
+            <EditInput type='text' id='name' name='name' value={product.description}/>
+          </EditLabel>     
       </ProductDisplay__columns>
     </ProductDisplayWrap>
   )

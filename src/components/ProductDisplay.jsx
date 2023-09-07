@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { useLoaderData } from 'react-router-dom'
+import { useLoaderData, Link} from 'react-router-dom'
 import styled from 'styled-components'
 import ColorOptions from './ColorOptions'
 import { EditStoreButtonWrapper } from '../styles/Buttons.styled'
@@ -84,9 +84,9 @@ const ProductDisplay = () => {
         <GetProductDescription>{product.description}</GetProductDescription>
         <GetProductCategory>Categoría del producto: {product.categoryName}</GetProductCategory>
         <ColorOptions />      
-       {/*  <Link to={`/edit-products/${product.id}`}> */}
+        <Link to={`/edit-products/${product.id}`}>
         <EditStoreButtonWrapper>Edit Product</EditStoreButtonWrapper> 
-       {/*  </Link> */}
+        </Link>
       </ProductDisplay__columns>
     </ProductDisplayWrap>
   )

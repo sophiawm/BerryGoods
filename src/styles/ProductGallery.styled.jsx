@@ -20,7 +20,7 @@ export const ContainerSingleProductGallery = styled.div`
     background-color: white;
     display: flex;
     flex-wrap: wrap;
-    width: 20vw;
+    width: 30vw;
     margin: 2rem 1rem;
     box-shadow: 0px 4px 0px #000;
     @media (max-width: 768px) {
