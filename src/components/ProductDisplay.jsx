@@ -63,11 +63,11 @@ const GetProductCategory = styled(GetProductDescription)`
 
 
 const ProductDisplay = () => {
-  
-console.log(useLoaderData());
+  let product = useLoaderData()
 
- /*  
-  const [product, setProduct] = useState(null);
+
+  
+/*   const [product, setProduct] = useState(null);
 
   useEffect(() => {
     const fetchProduct = async () => {
@@ -97,15 +97,18 @@ console.log(useLoaderData());
         </ImageContainer>
       </ProductDisplay__columns>
       <ProductDisplay__columns>
-      {product ? ( 
+      {/* {product.map(product => {
+        return  ( */}
           <>
-            <GetProductName>Nombre del producto: {product.name}</GetProductName>
-            <GetProductDescription>Descripción del producto: {product.description}</GetProductDescription>
-            <GetProductCategory>Categoría del producto: {product.categoryName}</GetProductCategory>
-          </>
-        ) : (
-          <p>Cargando...</p>
-        )}
+          <GetProductName>Nombre del producto: {product.name}</GetProductName>
+          <GetProductDescription>Descripción del producto: {product.description}</GetProductDescription>
+          <GetProductCategory>Categoría del producto: {product.categoryName}</GetProductCategory>
+        </>
+    {/*     )
+      }
+      )}  
+          */}
+   
         <ColorOptions />        
       </ProductDisplay__columns>
     </ProductDisplayWrap>
