@@ -1,23 +1,29 @@
-import { styledWrapperProductGallery, styledProductImage, styledContainerProductDetails, styledProductName, styledProductCategory, styledProductPrice, styledContainerProductButtons, styledButtonDetails, styledButtonAction } from '../styles/ProductGallery.styled.jsx';
+import { ContainerProductGallery, ProductImage, ContainerProductDetails, 
+    ProductName, ProductCategory, ProductPrice, ContainerProductButtons, 
+    ButtonDetails, ButtonAction, ContainerButtonsActions, IconAction } from '../styles/ProductGallery.styled'
+import product1 from '../assets/product1.png'
+import deleteicon from '../assets/delete-button.png'
+import editicon from '../assets/edit-button.png'
+
 
 export default function ProductGallery() {
     return (
     <>
-    <styledWrapperProductGallery className="container-product-gallery">
-        <styledProductImage className="product-image" src="../assets/product1.png" alt="Product Image"/>
-        <styledContainerProductDetails className="container-product-details">
-            <styledProductName className="product-name">Product name</styledProductName>
-            <styledProductCategory className="product-category">Category</styledProductCategory>
-        </styledContainerProductDetails>
-        <styledProductPrice className="product-price">Price: 10,00€</styledProductPrice>
-        <styledContainerProductButtons className="container-product-buttons">
-            <styledButtonDetails className="button-details">View details</styledButtonDetails>
-            <styledContainerButtonsActions className="container-actions">
-                <styledButtonAction className="button-edit"><img className="icon-action" src="" alt="Button Edit"/></styledButtonAction>
-                <styledButtonAction className="button-delete"><img className="icon-action" src="" alt="Button Delete"/></styledButtonAction>
-            </styledContainerButtonsActions>
-        </styledContainerProductButtons>
-    </styledWrapperProductGallery>
+    <ContainerProductGallery className="container-product-gallery">
+        <ProductImage className="product-image" src={product1} alt="Product Image"/>
+        <ContainerProductDetails className="container-product-details">
+            <ProductName className="product-name">Product name</ProductName>
+            <ProductCategory className="product-category">Category</ProductCategory>
+        </ContainerProductDetails>
+        <ProductPrice className="product-price">Price: 10,00€</ProductPrice>
+        <ContainerProductButtons className="container-product-buttons">
+            <ButtonDetails className="button-details">VIEW MORE</ButtonDetails>
+            <ContainerButtonsActions className="container-actions">
+                <ButtonAction className="button-edit"><IconAction className="icon-action" src={deleteicon} alt="Button Edit"/></ButtonAction>
+                <ButtonAction className="button-delete"><IconAction className="icon-action" src={editicon} alt="Button Delete"/></ButtonAction>
+            </ContainerButtonsActions>
+        </ContainerProductButtons>
+    </ContainerProductGallery>
     </>
 );
 }

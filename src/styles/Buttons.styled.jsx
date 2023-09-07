@@ -4,7 +4,7 @@ export const ButtonsContainer = styled.div`
     display: flex;
     flex-direction: row;
     gap: 2rem;
-    margin: 1rem 0rem 1rem 5rem;
+    margin: 2rem 2rem 4rem;
     @media (max-width: 768px) {
         flex-direction: column;
         margin: 1rem;
