@@ -63,7 +63,7 @@ const ColorOptions = () => {
     <ColorOptionsWrap>
       <ConbinationSelector>Colors</ConbinationSelector>
       <SelectImageOption__Container>
-      {products.map(product => {
+      {/* {products.map(product => {
         return (
       
         <SelectImageOption__Label htmlFor="color">
@@ -71,7 +71,7 @@ const ColorOptions = () => {
         </SelectImageOption__Label>
         )
         
-      }) }
+      }) } */}
         
       </SelectImageOption__Container>    
     </ColorOptionsWrap>

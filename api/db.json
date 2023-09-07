@@ -1,4 +1,14 @@
 {
+
+  "artists": [
+    {
+      "id": 1,
+      "nickname": "Nickname",
+      "brand":  "Daily Design"
+    }
+  ],
+
+
   "products": [
     { 
       "id": 1,

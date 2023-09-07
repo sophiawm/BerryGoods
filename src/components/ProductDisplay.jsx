@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { useLoaderData } from 'react-router-dom'
 import styled from 'styled-components'
 import ColorOptions from './ColorOptions'
 import GetProduct from '../service/GetProduct'
@@ -63,7 +64,9 @@ const GetProductCategory = styled(GetProductDescription)`
 
 const ProductDisplay = () => {
   
-  
+console.log(useLoaderData());
+
+ /*  
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
@@ -79,7 +82,7 @@ const ProductDisplay = () => {
     };
 
     fetchProduct(); 
-  }, []);
+  }, []); */
  
 
   return (
