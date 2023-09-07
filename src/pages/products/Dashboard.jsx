@@ -1,5 +1,6 @@
 import '../../styles/ShopInformation.styled.jsx'
 import '../../styles/Dashboard.css'
+import { useEffect }  from 'react'
 import ProductGallery from '../../components/ProductGallery.jsx'
 import Footer from '../../components/Footer';
 import Navbar from '../../components/Header';
@@ -10,6 +11,10 @@ import { useLoaderData} from 'react-router-dom'
 
 function Dashboard() {
     let products = useLoaderData()
+
+    useEffect(() => {
+       
+      });
 
     return (
         <>
