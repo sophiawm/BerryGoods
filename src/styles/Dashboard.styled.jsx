@@ -24,6 +24,20 @@ export const ShopDesignsContainer = styled.div`
     align-items: center;
     }
 `;
+export const ContainerProductGallery = styled.div`
+    width:60vw;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    margin: 0rem 2rem;
+    @media (max-width: 768px) {
+	width: 80vw;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0rem;
+    }
+`;
 export const WelcomeTitle = styled.h1`
     margin: 2rem 0rem 0rem 3rem;
     font-size: 3rem;

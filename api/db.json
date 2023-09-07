@@ -23,8 +23,8 @@
   "products": [
     { 
       "id": 1,
-      "name": "Nombre de diseño Uno",
-      "description":"Descripción del producto Uno",
+      "name": "Diseño 1",
+      "description":"Descripción del producto 1",
       "color": "#212121",
       "price": 10,
       "categoryId": 1,
@@ -38,13 +38,13 @@
 
     { 
       "id": 2,
-      "name": "Nombre de diseño dos",
-      "description":"Descripción del producto dos",
+      "name": "Diseño 2",
+      "description":"Descripción del producto 2",
       "color": "#fff",
       "price": 20,
       "categoryId": 2,
       "images":"/src/assets/design2.png",
-       "formato":{
+      "formato":{
         "pixeles":"6000 × 3999",
         "in":"i20 × 13,3n",
         "formato":"jpg"
@@ -53,8 +53,8 @@
 
     { 
       "id": 3,
-      "name": "Nombre de diseño Tres",
-      "description":"Descripción del producto Tres",
+      "name": "Diseño 3",
+      "description":"Descripción del producto 3",
       "color": "red",
       "price": 30,
       "categoryId": 6,
@@ -68,8 +68,8 @@
     
     { 
       "id": 4,
-      "name": "Nombre de diseño Cuatro",
-      "description":"Descripción del producto Tres",
+      "name": "Diseño 4",
+      "description":"Descripción del producto 4",
       "color": "blue",
       "price": 30,
       "categoryId": 6,

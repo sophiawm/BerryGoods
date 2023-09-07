@@ -1,18 +1,5 @@
 import styled from 'styled-components';
 
-export const ContainerProductGallery = styled.div`
-    width:60vw;
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: row;
-    margin: 0rem 2rem;
-    @media (max-width: 768px) {
-	width: 80vw;
-    display: flex;
-    flex-direction: column;
-    margin: 1rem 0rem;
-    }
-`;
 
 export const ContainerSingleProductGallery = styled.div`
     font-family: 'Quicksand';
@@ -20,7 +7,7 @@ export const ContainerSingleProductGallery = styled.div`
     background-color: white;
     display: flex;
     flex-wrap: wrap;
-    width: 30vw;
+    width: 20vw;
     margin: 2rem 1rem;
     box-shadow: 0px 4px 0px #000;
     @media (max-width: 768px) {

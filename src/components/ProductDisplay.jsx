@@ -14,6 +14,13 @@ const ProductDisplayWrap = styled.section`
   width: 100vw;
   height: 65%;
   background-color: #F8F3E0 ;
+  font-family: 'Quicksand';
+  @media (max-width: 768px) {
+	width: 80vw;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0rem 4rem;
+    }
   
 `
 const ProductDisplay__columns = styled.div`
@@ -29,17 +36,19 @@ const StoreNameContainer = styled.div`
   gap: 0.8rem;
 `
 const StoreName__title = styled.h1`
-  font: normal 600 clamp(2.063rem, 1.58rem + 2.41vw, 3.75rem) 'Quicksans', sans-serif; 
+  font: normal 600 clamp(2.063rem, 1.58rem + 2.41vw, 3.75rem) 'Quicksand', sans-serif; 
   color: #000;
 `
 
 const StoreName__subtitle = styled.p`
-  font: normal medium 19px/25px 'Poppins';
+  font: normal medium 19px/25px 'Quicksand';
   color: #000;
 `
 
 const ImageContainer = styled.picture`
-  background-color: none;
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 0.6rem;
   display: flex;
   width: 100%;
   max-width: 11rem; 
@@ -51,12 +60,14 @@ const ImageEmbed = styled.img`
   object-fit: contain; 
 `
 const GetProductName = styled(StoreName__title)`
-  font-size: clamp(1rem, 0.696rem + 1.52vw, 2.063rem) ;
+  font-size: 2rem;
   color: #6134C2;
+  
 `
 
 const GetProductDescription = styled(GetProductName)`
-  font-size: clamp(0.688rem, 0.455rem + 1.16vw, 1.5rem);
+  font-size: 1.1rem;
+  font-family: 'Quicksand';
 `
 
 const GetProductCategory = styled(GetProductDescription)`
@@ -75,7 +86,7 @@ const ProductDisplay = () => {
           <StoreName__subtitle>Opened since 2019</StoreName__subtitle>
         </StoreNameContainer>
         <ImageContainer>
-          <ImageEmbed src={product.images} alt=''/>
+          <ImageEmbed src={product.images} alt='product'/>
         </ImageContainer>
       </ProductDisplay__columns>
 

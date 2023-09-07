@@ -11,14 +11,13 @@ const Login = ()=>{
     const navigate = useNavigate()
 
     const handleSubmitForm = async (data)=>{
-       
 
         let result = await fetch(`http://localhost:3000/users`)
         let users = await result.json()
 
         users.filter( user =>{
             if( data.email == user.userName && data.password == user.pass ){
-                navigate(`/products`)
+                navigate(`/homepage`)
             }else{
                 console.log("error en la contraseña o email")
             }
