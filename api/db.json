@@ -27,7 +27,13 @@
       "description":"Descripción del producto Uno",
       "color": "#212121",
       "price": 10,
-      "categoryId": 1
+      "categoryId": 1,
+      "images":"/src/assets/design1.png",
+      "formato":{
+        "pixeles":"6000 × 3999",
+        "in":"i20 × 13,3n",
+        "formato":"jpg"
+    }
     },
 
     { 
@@ -36,7 +42,13 @@
       "description":"Descripción del producto dos",
       "color": "#fff",
       "price": 20,
-      "categoryId": 2
+      "categoryId": 2,
+      "images":"/src/assets/design2.png",
+       "formato":{
+        "pixeles":"6000 × 3999",
+        "in":"i20 × 13,3n",
+        "formato":"jpg"
+    }
     },
 
     { 
@@ -45,7 +57,13 @@
       "description":"Descripción del producto Tres",
       "color": "red",
       "price": 30,
-      "categoryId": 6
+      "categoryId": 6,
+      "images": "/src/assets/design3.png",
+      "formato":{
+        "pixeles":"6000 × 3999",
+        "in":"i20 × 13,3n",
+        "formato":"jpg"
+    }
     },
     
     { 
@@ -54,7 +72,13 @@
       "description":"Descripción del producto Tres",
       "color": "blue",
       "price": 30,
-      "categoryId": 6
+      "categoryId": 6,
+      "images": "/src/assets/design4.png",
+      "formato":{
+        "pixeles":"6000 × 3999",
+        "in":"i20 × 13,3n",
+        "formato":"jpg"
+    }
     }
 
   ],

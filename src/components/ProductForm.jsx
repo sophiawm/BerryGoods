@@ -8,19 +8,18 @@ import GetCategories from '../service/GetCategories'
 
 const ProductDisplayWrap = styled.section`
   display: flex; 
-  justify-content: space-around;
+  justify-content: space-between;
   align-content: center;
   width: 100vw;
-  height: 65vh;
   background-color: #F8F3E0 ;
   
 `
 const ProductDisplay__columns = styled.div`
   display:flex;
   flex-direction: column;
-  justify-content:center;
+  align-items: start;
   gap: 2rem; 
-  padding: 2rem;
+
 `
 const StoreNameContainer = styled.div`
   display: flex;
@@ -49,26 +48,34 @@ const ImageEmbed = styled.img`
   width: 0;
   object-fit: contain; 
 `
-const GetProductName = styled(StoreName__title)`
-  font-size: clamp(1rem, 0.696rem + 1.52vw, 2.063rem) ;
-  color: #6134C2;
+const EditLabel = styled.label`
+  display: inline-flex; 
+
 `
 
-const GetProductDescription = styled(GetProductName)`
+const EditInput = styled.input`
+  cursor: pointer;
+  width: 15rem;
+  height: 3rem;
+  background-color: ${(props) => props.backgroundColor};
+  box-shadow: 0px 4px 0px #000;
+`
+
+/* const GetProductDescription = styled(GetProductName)`
   font-size: clamp(0.688rem, 0.455rem + 1.16vw, 1.5rem);
 `
 
-const GetProductCategory = styled(GetProductDescription)`
-`
+const GetProductCategory = styled(GetProductDescription)` 
+`*/
 
 
 
 const ProductDisplay = () => {
   let product = useLoaderData()
-  console.log(useLoaderData)
+  console.log(product)
 
   
-/*   const [product, setProduct] = useState(null);
+ /*  const [product, setProduct] = useState(null);
 
   useEffect(() => {
     const fetchProduct = async () => {
@@ -76,14 +83,14 @@ const ProductDisplay = () => {
         const productData = await GetProduct(2); 
         const categoryData = await GetCategories(productData.categoryId); 
         productData.categoryName = categoryData.categoryName; 
-        setProduct(productData);; 
+        setProduct(productData);
       } catch (error) {
         console.error('Error fetching product:', error);
       }
-    };
+    }; 
 
     fetchProduct(); 
-  }, []); */
+  }, []);*/
  
 
   return (
@@ -94,15 +101,24 @@ const ProductDisplay = () => {
           <StoreName__subtitle>Opened since 2019</StoreName__subtitle>
         </StoreNameContainer>
         <ImageContainer>
-          <ImageEmbed src={product.images} alt=''/>
+          <ImageEmbed src='src/assets/react.svg' alt=''/>
         </ImageContainer>
       </ProductDisplay__columns>
-
       <ProductDisplay__columns>
-        <GetProductName>{product.name}</GetProductName>
-        <GetProductDescription>{product.description}</GetProductDescription>
-        <GetProductCategory>Categoría del producto: {product.categoryName}</GetProductCategory>
-        <ColorOptions />        
+      {/* {product.map(product => {
+        return  ( */}
+          <>
+          <EditLabel  htmlFor="name"> 
+            <EditInput type='text' id='name' name='name' value={product.name}/>
+          </EditLabel>
+          
+          {/* <GetProductDescription>Descripción del producto: {product.description}</GetProductDescription>
+          <GetProductCategory>Categoría del producto: {product.categoryName}</GetProductCategory> */}
+        </>
+    {/*     )
+      }
+      )}  
+          */}      
       </ProductDisplay__columns>
     </ProductDisplayWrap>
   )
