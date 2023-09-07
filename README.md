@@ -87,7 +87,7 @@ Fork this repository to your GitHub account.
 Create a new branch for your feature or bug fix.
 
 ## Contact
-If you have questions or feedback, feel free to reach out at BerryGoods@gmail.com
+If you have questions or feedback, feel free to reach out at helloberries@berrygoods.com
 
 
 ## Project status
