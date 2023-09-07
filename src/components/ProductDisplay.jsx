@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useLoaderData } from 'react-router-dom'
 import styled from 'styled-components'
 import ColorOptions from './ColorOptions'
+import { EditStoreButtonWrapper } from '../styles/Buttons.styled'
 import GetProduct from '../service/GetProduct'
 import GetCategories from '../service/GetCategories'
 
@@ -11,7 +12,7 @@ const ProductDisplayWrap = styled.section`
   justify-content: space-around;
   align-content: center;
   width: 100vw;
-  height: 65vh;
+  height: 65%;
   background-color: #F8F3E0 ;
   
 `
@@ -59,33 +60,13 @@ const GetProductDescription = styled(GetProductName)`
 `
 
 const GetProductCategory = styled(GetProductDescription)`
+
 `
-
-
 
 const ProductDisplay = () => {
   let product = useLoaderData()
-  console.log(useLoaderData)
-
-  
-/*   const [product, setProduct] = useState(null);
-
-  useEffect(() => {
-    const fetchProduct = async () => {
-      try {
-        const productData = await GetProduct(2); 
-        const categoryData = await GetCategories(productData.categoryId); 
-        productData.categoryName = categoryData.categoryName; 
-        setProduct(productData);; 
-      } catch (error) {
-        console.error('Error fetching product:', error);
-      }
-    };
-
-    fetchProduct(); 
-  }, []); */
- 
-
+  console.log(product)
+   
   return (
     <ProductDisplayWrap>
       <ProductDisplay__columns>
@@ -102,7 +83,10 @@ const ProductDisplay = () => {
         <GetProductName>{product.name}</GetProductName>
         <GetProductDescription>{product.description}</GetProductDescription>
         <GetProductCategory>Categoría del producto: {product.categoryName}</GetProductCategory>
-        <ColorOptions />        
+        <ColorOptions />      
+       {/*  <Link to={`/edit-products/${product.id}`}> */}
+        <EditStoreButtonWrapper>Edit Product</EditStoreButtonWrapper> 
+       {/*  </Link> */}
       </ProductDisplay__columns>
     </ProductDisplayWrap>
   )
@@ -112,3 +96,33 @@ export default ProductDisplay
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*   const [product, setProduct] = useState(null);
+
+  useEffect(() => {
+    const fetchProduct = async () => {
+      try {
+        const productData = await GetProduct(2); 
+        const categoryData = await GetCategories(productData.categoryId); 
+        productData.categoryName = categoryData.categoryName; 
+        setProduct(productData);; 
+      } catch (error) {
+        console.error('Error fetching product:', error);
+      }
+    };
+
+    fetchProduct(); 
+  }, []); */

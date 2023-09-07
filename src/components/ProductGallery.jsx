@@ -8,12 +8,9 @@ import editicon from '../assets/edit-button.png'
 
 
 
-export default function ProductGallery(products, categories) {
+export default function ProductGallery(products) {
  const data = products.products
- const dataCategory = categories.categories
- console.log(dataCategory)
-
-
+    console.log(data)
 
     return (
     <>

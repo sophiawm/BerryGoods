@@ -61,37 +61,9 @@ const EditInput = styled.input`
   box-shadow: 0px 4px 0px #000;
 `
 
-/* const GetProductDescription = styled(GetProductName)`
-  font-size: clamp(0.688rem, 0.455rem + 1.16vw, 1.5rem);
-`
-
-const GetProductCategory = styled(GetProductDescription)` 
-`*/
-
-
-
 const ProductDisplay = () => {
   let product = useLoaderData()
   console.log(product)
-
-  
- /*  const [product, setProduct] = useState(null);
-
-  useEffect(() => {
-    const fetchProduct = async () => {
-      try {
-        const productData = await GetProduct(2); 
-        const categoryData = await GetCategories(productData.categoryId); 
-        productData.categoryName = categoryData.categoryName; 
-        setProduct(productData);
-      } catch (error) {
-        console.error('Error fetching product:', error);
-      }
-    }; 
-
-    fetchProduct(); 
-  }, []);*/
- 
 
   return (
     <ProductDisplayWrap>
@@ -108,6 +80,9 @@ const ProductDisplay = () => {
       {/* {product.map(product => {
         return  ( */}
           <>
+          <EditLabel  htmlFor="name"> 
+            <EditInput type='text' id='name' name='name' value={product.name}/>
+          </EditLabel>
           <EditLabel  htmlFor="name"> 
             <EditInput type='text' id='name' name='name' value={product.name}/>
           </EditLabel>
@@ -128,3 +103,24 @@ export default ProductDisplay
 
 
 
+
+
+
+
+ /*  const [product, setProduct] = useState(null);
+
+  useEffect(() => {
+    const fetchProduct = async () => {
+      try {
+        const productData = await GetProduct(2); 
+        const categoryData = await GetCategories(productData.categoryId); 
+        productData.categoryName = categoryData.categoryName; 
+        setProduct(productData);
+      } catch (error) {
+        console.error('Error fetching product:', error);
+      }
+    }; 
+
+    fetchProduct(); 
+  }, []);*/
+ 

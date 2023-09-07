@@ -56,7 +56,7 @@ const router = createBrowserRouter([
   },  
 
   {
-    path:'/edit-products/',
+    path:'/edit-products/:id',
     element:<ProductFormPage/>,
     loader: fetchProduct
   }

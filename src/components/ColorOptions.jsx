@@ -54,7 +54,6 @@ const ColorOptions = () => {
     const fetchProduct = async () => {
       try {
         const productData = await GetProducts();  
-        console.log(productData)
         setProduct(productData);
       } catch (error) {
         console.error('Error fetching product:', error);
