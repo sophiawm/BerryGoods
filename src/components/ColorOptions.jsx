@@ -18,6 +18,7 @@ const SelectImageOption__Container = styled.span`
   max-width: 6rem;
   height:100%;
   max-height: 6rem;
+  gap: 0.8rem;
 `
 
 const SelectImageOption__Label = styled.label`
@@ -39,6 +40,10 @@ const SelectImageOption__input = styled.input`
 
 `
 
+/* 
+const ProductDisplay = () => {
+  let product = useLoaderData()
+  console.log(useLoaderData) */
 
 
 const ColorOptions = () => {
@@ -49,7 +54,6 @@ const ColorOptions = () => {
     const fetchProduct = async () => {
       try {
         const productData = await GetProducts();  
-        console.log(productData)
         setProduct(productData);
       } catch (error) {
         console.error('Error fetching product:', error);
@@ -63,15 +67,14 @@ const ColorOptions = () => {
     <ColorOptionsWrap>
       <ConbinationSelector>Colors</ConbinationSelector>
       <SelectImageOption__Container>
-      {/* {products.map(product => {
+      {products.map(product => {
         return (
-      
         <SelectImageOption__Label htmlFor="color">
         <SelectImageOption__input type='radio' id='color' name='color' backgroundColor={product.color} hoverBackgroundColor={product.color33}/>
         </SelectImageOption__Label>
         )
         
-      }) } */}
+      }) }
         
       </SelectImageOption__Container>    
     </ColorOptionsWrap>
