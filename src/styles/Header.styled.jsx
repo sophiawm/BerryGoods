@@ -6,7 +6,10 @@ export const Header = styled.header`
   width: 100%;
   margin: 0;
   padding: 0;
-  height: 10vh;
+  height: 6rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 
   @media (min-width: 768px) {
     width:100%;
@@ -16,14 +19,18 @@ export const Header = styled.header`
 
 export const Nav = styled.nav`
   width: 100%;
-  margin: 0;
+  margin: 0rem 2rem;
   padding: 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+
   @media (min-width: 768px) {
-    display:flex;
+    display: inline-flex;
     flex-direction:row;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
     height:15vh;
   }
@@ -31,11 +38,8 @@ export const Nav = styled.nav`
 
 export const Logo = styled.div`
   img {
-    display:flex;
     width: 6rem;
-    padding: 1.5rem;
-    margin-left: 3rem;
-    
+    margin:0;
     @media (min-width: 768px) {
       width: 8rem;
       padding: 0.5rem;
@@ -84,9 +88,8 @@ export const Menu = styled.ul`
 
 export const BurgerIcon = styled.div`
   display: block;
-  padding: 2rem 3rem;
+  padding: 0;
   
-
   @media (min-width: 768px) {
     display: none;
   }

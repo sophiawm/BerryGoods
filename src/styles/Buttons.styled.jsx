@@ -4,11 +4,12 @@ export const ButtonsContainer = styled.div`
     display: flex;
     flex-direction: row;
     gap: 2rem;
-    margin: 2rem 2rem 4rem;
+    margin: 3rem 0rem 6rem 3rem;
     @media (max-width: 768px) {
         flex-direction: column;
-        margin: 1rem;
-        width:70vw;
+        align-items: center;
+        margin: 2rem 0rem;
+        width:100vw;
     }
 `;
 
@@ -24,6 +25,7 @@ export const AddProductButtonWrapper = styled.button`
   font-weight: 700;
 
   @media (max-width: 768px) {
+    display: block;
     margin-right: 0;
     margin-bottom: 10px;
   }

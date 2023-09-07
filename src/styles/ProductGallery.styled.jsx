@@ -1,26 +1,46 @@
 import styled from 'styled-components';
 
 export const ContainerProductGallery = styled.div`
-    margin: 3rem 2rem;
+    width:60vw;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+    margin: 0rem 2rem;
+    @media (max-width: 768px) {
+	width: 80vw;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0rem;
+    }
+`;
+
+export const ContainerSingleProductGallery = styled.div`
     font-family: 'Quicksand';
     border-radius: 0.5rem;
-    background-color: #F8F3E0;
-    display:flex;
-    flex-direction: column;
-    width: 25vw;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    width: 20vw;
+    margin: 2rem 1rem;
+    box-shadow: 0px 4px 0px #000;
+    @media (max-width: 768px) {
+        width: 80vw;
+        margin: 1rem 0rem;
+    }
 `;
 export const ProductImage = styled.img`
     border-radius: 0.5rem 0.5rem 0rem 0rem;
     overflow: hidden;
-
     background-color: #F3B605;
 `;
 export const ContainerProductDetails = styled.div`
     display: inline-flex;
+    width: 100%;
     justify-content: space-between;
     margin: 2rem 1.5rem;
     @media (max-width: 768px) {
         margin: 2rem 1rem 1rem;
+        justify-content: space-between;
     }
 `;
 export const ProductName = styled.h3 `
@@ -37,7 +57,7 @@ export const ProductCategory = styled.p `
         color: #6134C2;
         text-align: center;
         font-size: 0.7rem;
-        font-weight: 600; 
+        font-weight: 600;
     }
         @media (max-width: 768px) {
             display: none;

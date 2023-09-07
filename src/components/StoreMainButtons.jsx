@@ -6,7 +6,6 @@ function MainButtons () {
     <>
     <ButtonsContainer>
         <AddProductButtonWrapper>ADD PRODUCT</AddProductButtonWrapper>
-        <EditStoreButtonWrapper>EDIT STORE</EditStoreButtonWrapper>
     </ButtonsContainer>
     </>
   );

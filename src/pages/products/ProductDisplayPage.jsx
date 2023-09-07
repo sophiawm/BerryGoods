@@ -1,4 +1,3 @@
-import '../../styles/reset.css'
 import ProductDisplay from '../../components/ProductDisplay.jsx'
 import Footer from '../../components/Footer';
 import Navbar from '../../components/Header';
