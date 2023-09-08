@@ -28,7 +28,7 @@ export default function ProductGallery(products) {
     {data.map(product => {
         return (
         <ContainerSingleProductGallery className="container-product-gallery">
-                    <ProductImage className="product-image" src={product1} alt="Product Image"/>
+                    <ProductImage className="product-image" src={product.images} alt="Product Image"/>
                     <ContainerProductDetails className="container-product-details">
                         <ProductName className="product-name">{product.name}</ProductName>
                         <ProductCategory className="product-category">Category{product.categories}</ProductCategory>

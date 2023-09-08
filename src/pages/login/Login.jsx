@@ -40,6 +40,7 @@ const Login = ()=>{
                     </div>
                     <div>
                         <input 
+                            type="password"
                             placeholder="Password" 
                             className={styles.loginInput}
                             {...register('password',{required:true})}
