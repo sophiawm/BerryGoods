@@ -1,133 +1,75 @@
 {
-  "users":[
+  "users": [
     {
-        "id":0,
-        "userName":"sergio",
-        "pass":123
+      "id": 0,
+      "userName": "sergio",
+      "pass": 123
     },
     {
-        "id":1,
-        "userName":"celia",
-        "pass":123
+      "id": 1,
+      "userName": "celia",
+      "pass": 123
     }
-],
+  ],
   "artists": [
     {
       "id": 1,
       "nickname": "Nickname",
-      "brand":  "Daily Design"
+      "brand": "Daily Design"
     }
   ],
-
-
   "products": [
-    { 
-      "id": 1,
-      "name": "Diseño 1",
-      "description":"Descripción del producto 1",
-      "color": "#212121",
-      "price": 10,
-      "categoryId": 1,
-      "images":"/src/assets/design1.png",
-      "formato":{
-        "pixeles":"6000 × 3999",
-        "in":"i20 × 13,3n",
-        "formato":"jpg"
-    }
-    },
-
-    { 
-      "id": 2,
-      "name": "Diseño 2",
-      "description":"Descripción del producto 2",
-      "color": "#fff",
-      "price": 20,
-      "categoryId": 2,
-      "images":"/src/assets/design2.png",
-      "formato":{
-        "pixeles":"6000 × 3999",
-        "in":"i20 × 13,3n",
-        "formato":"jpg"
-    }
-    },
-
-    { 
-      "id": 3,
+    {
+      "id": 6,
       "name": "Diseño 3",
-      "description":"Descripción del producto 3",
+      "description": "Descripción del producto 3",
       "color": "red",
       "price": 30,
       "categoryId": 6,
       "images": "/src/assets/design3.png",
-      "formato":{
-        "pixeles":"6000 × 3999",
-        "in":"i20 × 13,3n",
-        "formato":"jpg"
+      "formato": {
+        "pixeles": "6000 × 3999",
+        "in": "i20 × 13,3n",
+        "formato": "jpg"
+      }
     }
-    },
-    
-    { 
-      "id": 4,
-      "name": "Diseño 4",
-      "description":"Descripción del producto 4",
-      "color": "blue",
-      "price": 30,
-      "categoryId": 6,
-      "images": "/src/assets/design4.png",
-      "formato":{
-        "pixeles":"6000 × 3999",
-        "in":"i20 × 13,3n",
-        "formato":"jpg"
-    }
-    }
-
   ],
-
   "categories": [
     {
       "id": 1,
-      "categoryName": "Abstract" 
+      "categoryName": "Abstract"
     },
-
     {
       "id": 2,
-      "categoryName": "Vintage" 
+      "categoryName": "Vintage"
     },
-
     {
       "id": 3,
-      "categoryName": "Typography" 
+      "categoryName": "Typography"
     },
-
     {
       "id": 4,
-      "categoryName": "lowbrow" 
+      "categoryName": "lowbrow"
     },
-
     {
       "id": 5,
-      "categoryName": "Painting" 
+      "categoryName": "Painting"
     },
-
     {
       "id": 6,
-      "categoryName": "Floral" 
+      "categoryName": "Floral"
     },
-
     {
       "id": 7,
-      "categoryName": "Illustration" 
+      "categoryName": "Illustration"
     },
-
     {
       "id": 8,
-      "categoryName": "Tatto" 
+      "categoryName": "Tatto"
     },
-
     {
       "id": 9,
-      "categoryName": "Dark art" 
+      "categoryName": "Dark art"
     }
-    
   ]
 }

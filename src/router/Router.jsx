@@ -18,8 +18,8 @@ const fetchProduct = async ({params}) => {
 }
 
 const fetchProductEdit = async ({params}) => {
-  const id = ({params}).params.id
-  let product = await productsService.editProduct(id)
+  const id = params.id
+  let product = await productsService.getProduct(id)
   return product
 }
 
@@ -30,8 +30,7 @@ const fetchCategory = async ({params}) => {
   return product
 }
 
-const fecthProductDelete = async ( {params}) => {
-  const id = ({params}).params.id
+const fecthProductDelete = async (id) => {
   let deleteProduct = productsService.deleteProduct(id);
   return deleteProduct
 }
@@ -51,11 +50,6 @@ const router = createBrowserRouter([
     loader: fetchProducts
   },  
 
-  {
-    path: "/homepage",
-    element: <Dashboard />,
-    loader: fecthProductDelete
-  }, 
 
   {
     path:'/homepage/:id',

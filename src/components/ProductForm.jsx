@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import { useLoaderData } from 'react-router-dom'
 import styled from 'styled-components'
+import { EditStoreButtonWrapper } from '../styles/Buttons.styled'
 import ColorOptions from './ColorOptions'
 import GetProduct from '../service/GetProduct'
 import GetCategories from '../service/GetCategories'
+import productsService from '../service/productService'
 
 
 const ProductDisplayWrap = styled.section`
@@ -58,13 +60,16 @@ const EditInput = styled.input`
   cursor: pointer;
   width: 15rem;
   height: 3rem;
+  appearance: unset;
   background-color: ${(props) => props.backgroundColor};
   box-shadow: 0px 4px 0px #000;
 `
 
 const ProductDisplay = () => {
   let product = useLoaderData()
-  console.log(product)
+  const editProduct = (id, updateProduct) => {
+    productsService.editProduct(id)
+  }
 
   return (
     <ProductDisplayWrap>
@@ -79,11 +84,12 @@ const ProductDisplay = () => {
       </ProductDisplay__columns>
       <ProductDisplay__columns>
           <EditLabel  htmlFor="name"> Editar nombre:
-            <EditInput type='text' id='name' name='name' value={product.name}/>
+            <EditInput type='text' id='name' name='name' defaultValue={product.name} />
           </EditLabel>
           <EditLabel  htmlFor="name"> Editar descripción:
-            <EditInput type='text' id='name' name='name' value={product.description}/>
-          </EditLabel>     
+            <EditInput type='text' id='name' name='name' defaultValue={product.description}/>
+          </EditLabel>  
+        <EditStoreButtonWrapper onClick={() => editProduct(product.id)}>Save</EditStoreButtonWrapper>  
       </ProductDisplay__columns>
     </ProductDisplayWrap>
   )

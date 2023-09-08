@@ -76,9 +76,10 @@ const GetProductCategory = styled(GetProductDescription)`
 
 const ProductDisplay = () => {
   let product = useLoaderData()
-  console.log(product)
+
    
   return (
+   /*  <></> */
     <ProductDisplayWrap>
       <ProductDisplay__columns>
         <StoreNameContainer>

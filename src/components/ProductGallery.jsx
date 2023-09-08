@@ -1,20 +1,25 @@
 import { useState } from 'react'; 
-import { ContainerProductGallery, ContainerSingleProductGallery, ProductImage, ContainerProductDetails, 
+import { ContainerSingleProductGallery, ProductImage, ContainerProductDetails, 
     ProductName, ProductCategory, ProductPrice, ContainerProductButtons, 
     ButtonDetails, ButtonAction, ContainerButtonsActions, IconAction } from '../styles/ProductGallery.styled'
-import { useLoaderData, Link } from 'react-router-dom'
+import { useLoaderData, Link, useNavigate } from 'react-router-dom'
 import product1 from '../assets/product1.png'
 import product2 from '../assets/product2.png'
 import deleteicon from '../assets/delete-button.png'
 import editicon from '../assets/edit-button.png'
+import productsService from '../service/productService';
 
 
 
 export default function ProductGallery(products) {
+    
+    const [dataproduct, setDataProduct] = useState()
+    const navigate = useNavigate()
     const data = products.products
-    const deletefetch = products.products
+
     function deleteData(id) {
-        return deletefetch
+        productsService.deleteProduct(id)
+        navigate("/homepage")
     }
 
 
@@ -34,9 +39,9 @@ export default function ProductGallery(products) {
                         <ButtonDetails className="button-details">VIEW MORE</ButtonDetails>
                         </Link>
                 <ContainerButtonsActions className="container-actions">
-                        <ButtonAction className="button-edit"><IconAction className="icon-action" src={deleteicon} alt="Button Edit"/></ButtonAction>
+                        <ButtonAction className="button-delete"onClick={() => deleteData(product.id)} ><IconAction className="icon-action" src={deleteicon} alt="Button Delete"/></ButtonAction>
 
-                        <ButtonAction className="button-delete" onClick={async() => deleteData}><IconAction className="icon-action" src={editicon} alt="Button Delete" value /></ButtonAction>
+                        <ButtonAction className="button-edit" ><IconAction className="icon-action" src={editicon} alt="Button Edit" value /></ButtonAction>
 
                     </ContainerButtonsActions>
                     </ContainerProductButtons>
