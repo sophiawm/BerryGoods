@@ -77,7 +77,7 @@ const GetProductCategory = styled(GetProductDescription)`
 const ProductDisplay = () => {
   let product = useLoaderData()
 
-   
+
   return (
    /*  <></> */
     <ProductDisplayWrap>
