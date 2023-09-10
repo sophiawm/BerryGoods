@@ -46,20 +46,6 @@
         "in": "i20 × 13,3n",
         "formato": "jpg"
       }
-    },
-    {
-      "id": 4,
-      "name": "Diseño 4",
-      "description": "Descripción del producto 4",
-      "color": "red",
-      "price": 30,
-      "categoryId": 6,
-      "images": "/src/assets/product4.png",
-      "formato": {
-        "pixeles": "6000 × 3999",
-        "in": "i20 × 13,3n",
-        "formato": "jpg"
-      }
     }
   ],
   "categories": [
