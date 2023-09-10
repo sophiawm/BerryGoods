@@ -14,6 +14,7 @@ The idea for this app is a zero cost print on demand marketplace with responsive
 - [@Giorgidlc](https://github.com/Giorgidlc)
 - [@JesHardyM](https://github.com/JesHardyM)
 - [@rubenreyesv4](https://github.com/rubenreyesv4)
+- [@figueroablanco92](https://github.com/figueroablanco92)
   
  
 
