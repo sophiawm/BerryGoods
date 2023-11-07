@@ -1,5 +1,4 @@
 const API_PRODUCTS = "http://localhost:3000/products/" 
-const API_CATEGORIES = "http://localhost:3000/categories/" 
 
 const productsService = {
   
@@ -23,10 +22,7 @@ const productsService = {
     await fetch(API_PRODUCTS + id, {method: "DELETE"});
   },
 
-  async getCategory(id) {
-    let data = await(await fetch(API_CATEGORIES + id)).json()
-  }
-  
+
 }
 
 

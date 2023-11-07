@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react'
+/* import React, { useState, useEffect } from 'react' */
 import { useLoaderData, Link} from 'react-router-dom'
 import styled from 'styled-components'
 import ColorOptions from './ColorOptions'
 import { EditStoreButtonWrapper } from '../styles/Buttons.styled'
-import GetProduct from '../service/GetProduct'
-import GetCategories from '../service/GetCategories'
+/* import GetProduct from '../service/GetProduct'
+import GetCategories from '../service/GetCategories' */
 
 
 const ProductDisplayWrap = styled.section`
@@ -76,7 +76,7 @@ const GetProductCategory = styled(GetProductDescription)`
 
 const ProductDisplay = () => {
   let product = useLoaderData()
-
+  
    
   return (
    /*  <></> */

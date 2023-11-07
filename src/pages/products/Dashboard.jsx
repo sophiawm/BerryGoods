@@ -7,7 +7,7 @@ import Navbar from '../../components/Header';
 import MainButtons from '../../components/StoreMainButtons'
 import ShopInformationData from '../../components/ShopInformationData.jsx';
 import { ContainerProductGallery, DashboardBody, ShopDesignsContainer, WelcomeTitle, DateOpened, ProductNumber } from '../../styles/Dashboard.styled.jsx'
-import { useLoaderData} from 'react-router-dom'
+import { useLoaderData } from 'react-router-dom'
 
 function Dashboard() {
     let products = useLoaderData()

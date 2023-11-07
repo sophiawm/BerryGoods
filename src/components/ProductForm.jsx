@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react'
+/* import React, { useState, useEffect } from 'react' */
 import { useLoaderData } from 'react-router-dom'
 import styled from 'styled-components'
 import { EditStoreButtonWrapper } from '../styles/Buttons.styled'
-import ColorOptions from './ColorOptions'
-import GetProduct from '../service/GetProduct'
-import GetCategories from '../service/GetCategories'
+/* import ColorOptions from './ColorOptions' */
+/* import GetProduct from '../service/GetProduct'
+import GetCategories from '../service/GetCategories' */
 import productsService from '../service/productService'
 
 
@@ -67,7 +67,7 @@ const EditInput = styled.input`
 
 const ProductDisplay = () => {
   let product = useLoaderData()
-  const editProduct = (id, updateProduct) => {
+  const editProduct = (id, /* updateProduct */) => {
     productsService.editProduct(id)
   }
 

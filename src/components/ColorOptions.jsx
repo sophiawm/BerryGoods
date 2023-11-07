@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import GetProducts from '../service/GetProducts'
+import { useEffect, useState } from 'react'
+import productsService from '../service/productService.js'
 import styled from 'styled-components'
 
 const ColorOptionsWrap = styled.div`
@@ -55,7 +55,7 @@ const ColorOptions = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const productData = await GetProducts();  
+        const productData = await productsService();  
         setProduct(productData);
       } catch (error) {
         console.error('Error fetching product:', error);
@@ -71,9 +71,12 @@ const ColorOptions = () => {
       <SelectImageOption__Container>
       {products.map(product => {
         return (
-        <SelectImageOption__Label htmlFor="color">
-        <SelectImageOption__input type='radio' id='color' name='color' backgroundColor={product.color} hoverBackgroundColor={product.color33}/>
-        </SelectImageOption__Label>
+          <>
+          <SelectImageOption__Label htmlFor="color">
+          <SelectImageOption__input type='radio' id='color' name='color' backgroundColor={product.color} hoverBackgroundColor={product.color33}/>
+          </SelectImageOption__Label>
+          </>
+     
         )
         
       }) }
