@@ -13,8 +13,8 @@ function Dashboard() {
     let products = useLoaderData()
 
     useEffect(() => {
-       
-      });
+    
+    });
 
     return (
         <>

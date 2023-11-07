@@ -6,7 +6,7 @@ export const Header = styled.header`
   width: 100%;
   margin: 0;
   padding: 0;
-  height: 6rem;
+  height: 12vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -19,7 +19,7 @@ export const Header = styled.header`
 
 export const Nav = styled.nav`
   width: 100%;
-  margin: 0rem 2rem;
+  margin-left:0;
   padding: 0;
   display: flex;
   justify-content: space-between;
@@ -39,7 +39,7 @@ export const Nav = styled.nav`
 export const Logo = styled.div`
   img {
     width: 6rem;
-    margin:0;
+    margin:10%;
     @media (min-width: 768px) {
       width: 8rem;
       padding: 0.5rem;
@@ -52,13 +52,12 @@ export const Menu = styled.ul`
   display: ${props => (props.open ? "block" : "none")};
   background-color: #6134c2;
   list-style-type: none;
-  height: 40vh;
-  width: 96.5vw;
+  width: 100%;
   margin: 0;
   padding: 0;
   text-align: center; 
   position: absolute;
-  top: 7rem;
+  top: 10%;
   @media (min-width: 768px) {
     display: flex;
     flex-direction:row;
@@ -88,6 +87,7 @@ export const Menu = styled.ul`
 
 export const BurgerIcon = styled.div`
   display: block;
+  margin:5%;
   padding: 0;
   
   @media (min-width: 768px) {
