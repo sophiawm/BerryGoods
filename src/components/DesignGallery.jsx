@@ -1,4 +1,3 @@
-import React from 'react';
 import { GalleryContainer, ImageContainer, Image } from '../styles/DesingGallery.styled.jsx';
 import design1 from '../assets/design1.png';
 import design2 from '../assets/design2.png';

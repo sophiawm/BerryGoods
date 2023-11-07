@@ -1,10 +1,6 @@
-/* import React, { useState, useEffect } from 'react' */
 import { useLoaderData } from 'react-router-dom'
 import styled from 'styled-components'
 import { EditStoreButtonWrapper } from '../styles/Buttons.styled'
-/* import ColorOptions from './ColorOptions' */
-/* import GetProduct from '../service/GetProduct'
-import GetCategories from '../service/GetCategories' */
 import productsService from '../service/productService'
 
 
